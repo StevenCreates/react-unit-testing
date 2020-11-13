@@ -4,4 +4,6 @@ import userEvent from "@testing-library/user-event";
 
 test("validates user and password", () => {
   render(<Login />);
+  const username = screen.getByRole("textbox", { name: "Username" });
+  console.log(username);
 });
