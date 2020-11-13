@@ -1,14 +1,18 @@
 import * as React from "react";
 
 function Login({ onSubmit }) {
+  const [user, setUser] = React.useState({
+    username: "",
+    password: "",
+  });
   function handleSubmit(event) {
     event.preventDefault();
     const { username, password } = event.target.elements;
-
-    onSubmit({
+    setUser({
       username: username.value,
       password: password.value,
     });
+    console.log(user);
   }
   return (
     <form onSubmit={handleSubmit}>
