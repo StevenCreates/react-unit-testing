@@ -4,6 +4,7 @@ import userEvent from "@testing-library/user-event";
 
 test("user and password input accept text and you can change value", () => {
   render(<Login />);
+  // I used two different ways to get the input on this test just to see the difference in method. I think that both of these make it so it doesn't matter what position they are in
   const username = screen.getByRole("textbox", { name: "Username" });
   const password = screen.getByLabelText("Password");
   const submit = screen.getByRole("button", { name: /submit/i });
