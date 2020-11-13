@@ -12,7 +12,6 @@ function Login({ onSubmit }) {
       username: username.value,
       password: password.value,
     });
-    console.log(user);
   }
   return (
     <form onSubmit={handleSubmit}>
