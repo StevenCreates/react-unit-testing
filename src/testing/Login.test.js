@@ -15,4 +15,5 @@ test("user and password input accept text and you can change value", () => {
   expect(password.value).toBe("Password123!");
   userEvent.click(submit);
   expect(password.value).toBe("Password123!");
+  expect(username.value).toBe("$Admin");
 });
