@@ -1,5 +1,5 @@
 import Login2 from "../components/Login2";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 test("user and password input accept text and you can change value", () => {
